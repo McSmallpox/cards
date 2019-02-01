@@ -59,7 +59,7 @@ public class Deck {
       Card c = stock.remove(0);
       discard.add(c);
       return c;
-    } catch (IllegalStateException e) {
+    } catch (IndexOutOfBoundsException e) {
       throw new DeckEmptyException();
     }
   }

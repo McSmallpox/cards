@@ -57,11 +57,11 @@ private List<Card> pile2;
             Collections.addAll(warPile, card1, card2);
           }
         } catch (Exception e) {
-          //we wuz kangz
+          //do nothing
         }
       }else if (comparison > 0) {
         pile1.addAll((warPile));
-      } else (comparison < 0) {
+      } else if (comparison < 0) {
         pile2.addAll(warPile);
       }
     } while (tied);
